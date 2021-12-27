@@ -1,0 +1,32 @@
+.footer {
+  background-color: $background-color;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1600px;
+    height: 70px;
+    margin: 0 auto;
+  }
+
+  &__link {
+    color: $white-color;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+
+  &__span {
+    color: $white-color;
+    font-size: 1.5rem;
+  }
+}
+
+.ma-rs-logo {
+  background-image: url('../../assets/icons/rs_school-logo.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+  width: 160px;
+  height: 60px;
+}

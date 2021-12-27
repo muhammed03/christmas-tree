@@ -1,0 +1,119 @@
+@import '../../../../styles/base/_mixins';
+
+.main {
+  &__right {
+    padding-top: 80px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.toys-list {
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 10px;
+  }
+
+  &__item {
+    width: 70px;
+    height: 70px;
+    background-color: rgba(255, 255, 255, 0.72);
+    border-radius: 5px;
+    position: relative;
+    border: 1px solid transparent;
+    cursor: grab;
+    //&:hover {
+    //  border: 1px solid orange;
+    //  background-color: rgba(255, 255, 255, 0.9);
+    //}
+  }
+
+  &__img {
+    position: absolute;
+    width: 60px;
+  }
+
+  &__quantity {
+    position: absolute;
+    font-size: 14px;
+    top: 0;
+    right: 0;
+    background-color: #24c5db;
+    color: $white-color;
+    padding: 5px;
+    border-radius: 5px;
+  }
+}
+
+.dressed-tree-list {
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+
+  &__item {
+    width: 120px;
+    height: 120px;
+    background-color: rgba(255, 255, 255, 0.42);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__img {
+    height: 100%;
+  }
+}
+
+.setting-container {
+  border: 1px solid $box-border-color;
+  border-radius: 10px;
+  padding: 20px;
+  background: radial-gradient(118.88% 606.86% at 0% 0%, rgba(36, 197, 219, 0.15) 0%, rgba(36, 197, 219, 0) 100%);
+  backdrop-filter: blur(4px);
+  justify-content: space-around;
+  .reset-button {
+    padding: 10px;
+    background: $background-linear-gradient;
+    border: 2px solid $box-border-color-on-hover;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.ma-audio {
+  background: url('../../../../assets/icons/sound-icon.svg');
+  @include icon-normalize;
+  &:hover {
+    background: url('../../../../assets/icons/sound-icon-checked.svg');
+    @include icon-normalize;
+  }
+}
+
+.ma-audio-checked {
+  background: url('../../../../assets/icons/sound-icon-checked.svg');
+  @include icon-normalize;
+}
+
+.ma-snow {
+  background: url('../../../../assets/icons/snowflake-icon.svg');
+  @include icon-normalize;
+  &:hover {
+    background: url('../../../../assets/icons/snowflake-checked-icon.svg');
+    @include icon-normalize;
+  }
+}
+
+.ma-snow-checked {
+  background: url('../../../../assets/icons/snowflake-checked-icon.svg');
+  @include icon-normalize;
+}

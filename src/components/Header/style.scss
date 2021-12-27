@@ -1,0 +1,36 @@
+.header {
+  position: relative;
+  display: block;
+  &__inner-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1600px;
+    height: 70px;
+    margin: 0 auto;
+  }
+  &__menu {
+    margin-left: 50px;
+  }
+
+  &__menu-list {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  &__menu-link {
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+  }
+}
+
+.active-link {
+  border-bottom: 3px solid #278d9f;
+}
